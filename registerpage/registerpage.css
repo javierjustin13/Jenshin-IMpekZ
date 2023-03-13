@@ -173,7 +173,7 @@ input[type]{
     color: green;
     background-color: #d2ffd2;
     padding: 10px;
-    display: block;
+    display: none;
     width: 520px;
     height: 50px;
     font-size: 25px;
