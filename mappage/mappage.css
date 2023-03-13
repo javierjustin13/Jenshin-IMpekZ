@@ -431,4 +431,20 @@
     }
 }
 
+@media (max-width: 375px){
+    .nationlogo img{
+        width: 100px;
+        height: 100px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationtext h3{
+        font-size: 20px;
+    }
+
+    .nationtext p{
+        font-size: 14px;
+    }
+}
+
 
