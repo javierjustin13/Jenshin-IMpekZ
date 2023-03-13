@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@500&family=Roboto:wght@500&family=Yeseva+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;   
+}
+
+/* JUMBOTRON */
+.jumbotron{
+    background: url(assets/View1.jpg) no-repeat center;
+    background-size: cover;
+    margin-top: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100.2vh;
+    flex-direction: column;
+}
+
+.playnowbtn {
+    background-color: #D0F3FE;
+    width: 459px;
+    height: 62px;
+    font-family: 'Yeseva One', cursive;
+    color: #474150;
+    font-size: 28px;
+    justify-content: center;
+    border-radius: 90px;
+    align-items: center;
+    display: flex;
+    box-shadow: black 2px 2px;
+    margin-top: 360px;
+    margin-bottom: 25.2px;
+    cursor: pointer;
+}
+
+.playnowbtn:hover{
+    background-color: #7FC8FE;
+    transition: 0.5s;
+}
+
+.ps5_windows{
+    height: 57.6px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 25.2px;
+}
+
+.ps5{
+    width: 50%;
+    height: 57.6px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24.5px;
+}
+
+.windows{
+    width: 50%;
+    height: 57.6px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 24.5px;
+}
+
+.ps5 img{
+    width: 187.2px;
+    height: 57.6px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.windows img{
+    width: 187.2px;
+    height: 57.6px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.ps5 img:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.windows img:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.appstore_googleplay{
+    height: 57.6px;
+    width: 100%;
+    display: flex;
+}
+
+.appstore{
+    width: 50%;
+    height: 57.6px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 24.5px;
+}
+
+.googleplay{
+    width: 50%;
+    height: 57.6px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 24.5px;
+}
+
+.appstore img{
+    width: 187.2px;
+    height: 57.6px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.googleplay img{
+    width: 187.2px;
+    height: 57.6px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.appstore img:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.googleplay img:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.teenesrb{
+    width: 100%;
+}
+
+.teenesrb img{
+    margin-left: 35px;
+    width: 145px;
+    height: 91.2px;
+}
+
+@media (max-width: 858px) {
+    .teenesrb{
+        margin-top: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: all 0.5s ease;
+    }
+    .teenesrb img{
+        margin-left: 0px;
+        transition: all 0.5s ease;
+    }
+    .googleplay, .windows{
+        margin-left: 19px;
+        transition: all 0.5s ease;
+    }
+
+    .appstore, .ps5{
+        margin-right: 19px;
+        transition: all 0.5s ease;
+    }
+}
+
+@media (max-width: 675px) {
+    .playnowbtn {
+        width: 350px;
+        transition: all 0.5s ease;
+        font-size: 23px;
+    }
+
+    .appstore img, .googleplay img, .ps5 img, .windows img{
+        width: 150px;
+        height: 50px;
+        transition: all 0.5s ease;
+    }
+
+    .googleplay, .windows{
+        margin-left: 14px;
+        transition: all 0.5s ease;
+    }
+
+    .appstore, .ps5{
+        margin-right: 14px;
+        transition: all 0.5s ease;
+    }
+    .teenesrb{
+        margin-top: 25px;
+    }
+    .teenesrb img{
+        width: 108.75px;
+        height: 68.4px;
+        transition: all 0.5s ease;
+    }
+}
+
+/* NEW CHARACTERS AND WEAPONS */
+.newthings{
+    background: url(assets/ViewVertical2.jpg) no-repeat center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    height: 1692px;
+}
+
+.newcharacters{
+    font-family: 'Yeseva One', cursive;
+    font-size: 28px;
+    margin-top: 60.5px;
+}
+
+.mika{
+    margin-top: 79.2px;
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+.mikaimg{
+    width: 52%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mikaprofile{
+    width: 48%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 69px;
+}
+
+.mikaimg img{
+    width: 536px;
+    height: 600px;
+    cursor: pointer;
+}
+
+.mikaprofile h2{
+    padding-top: 25.2px;
+    font-family: 'Yeseva One', cursive;
+    font-size: 64px;
+    color: white;
+    text-shadow: -1px 1px 3px #000,
+				  1px 1px 3px #000,
+				  1px -1px 2px #000,
+				 -1px -1px 2px #000;
+    line-height: 74px;
+}
+
+.mikaprofile p{
+    padding-top: 14.4px;
+    font-family: 'Faustina', serif;
+    font-size: 32px;
+    line-height: 40.3px;
+    color: #FFFFFF;
+    text-shadow: -1px 1px 3px #000,
+				  1px 1px 3px #000,
+				  1px -1px 2px #000,
+				 -1px -1px 2px #000;
+    width: 490px;
+}
+
+.newweapons{
+    font-family: 'Yeseva One', cursive;
+    font-size: 28px;
+    margin-top: 93px;
+}
+
+.weaponimg{
+    padding-top: 144px;
+    width: 100%;
+    height: 557px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.weaponimg img{
+    width: 991px;
+    height: 557px;
+}
+
+@media (max-width: 1200px) {
+    .mika{
+        margin-top: 50px;
+        flex-direction: column;
+        transition: all 0.5s ease;
+    }
+    .mikaimg{
+        width: 100%;
+        align-items: center;
+        height: 390px;
+        justify-content: center;
+        transition: all 0.5s ease;
+    }
+    .mikaprofile{
+        width: 100%;
+        height: 390px;
+        padding-left: 0px;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        margin-top: 40px;
+    }
+    .mikaimg img{
+        width: 348.4px;
+        height: 390px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    .mikaprofile h2{
+        padding-top: 13.38px;
+        font-size: 43.6px;
+        line-height: 50.1px;
+        transition: all 0.5s ease;
+    }
+    .mikaprofile p{
+        padding-top: 10px;
+        font-size: 23px;
+        line-height: 40px;
+        width: 318.5px;
+        transition: all 0.5s ease;
+        text-align: center;
+    }
+    
+    .newweapons{
+        margin-top: 350px;
+        transition: all 0.5s ease;
+    }
+    
+    .weaponimg{
+        padding-top: 144px;
+        width: 100%;
+        height: 334.2px;
+        transition: all 0.5s ease;
+    }
+    
+    .weaponimg img{
+        width: 594.6px;
+        height: 334.2px;
+        transition: all 0.5s ease;
+    }
+}
+
+@media (max-width:675px) {
+    .mikaprofile{
+        margin-top: 65px;
+        transition: all 0.5s ease;
+    }
+    .newweapons{
+        margin-top: 375px;
+        transition: all 0.5s ease;
+    }
+
+    .weaponimg{
+        padding-top: 144px;
+        width: 100%;
+        height: 194.95px;
+        transition: all 0.5s ease;
+    }
+    
+    .weaponimg img{
+        width: 346.85px;
+        height: 194.95px;
+        transition: all 0.5s ease;
+    }
+    h3{
+        font-size: 23px;
+        transition: all 0.5s ease;
+    }
+}
+
+@media (max-width: 450px) {
+    .playnowbtn {
+        width: 250px;
+        transition: all 0.5s ease;
+        font-size: 19px;
+    }
+    .googleplay, .windows{
+        margin-left: 5px;
+        transition: all 0.5s ease;
+    }
+
+    .appstore, .ps5{
+        margin-right: 5px;
+        transition: all 0.5s ease;
+    }
+    .appstore img, .googleplay img, .ps5 img, .windows img{
+        width: 120px;
+        height: 40px;
+        transition: all 0.5s ease;
+    }
+}

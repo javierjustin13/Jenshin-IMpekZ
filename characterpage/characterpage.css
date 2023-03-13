@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@500&family=Roboto:wght@500&family=Yeseva+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* LOGO */
+.nationlogotop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 14.722vw;
+    margin-top: calc(112px + 43px) ;
+    min-height: 99.4px;
+}
+
+.nationlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 14.722vw;
+    margin-top: 43px;
+    min-height: 99.4px;
+}
+
+/* CHARACTER */
+.charactertop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 725px;
+    margin-top: 43px;
+}
+
+.characterbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 725px;
+}
+
+.rightimg{
+    width: 50%;
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.leftimg{
+    width: 40%;
+    height: 725px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.leftbox{
+    width: 500px;
+    height: 725px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+}
+
+.rightbox{
+    width: 500px;
+    height: 725px;
+    background-color:white;
+    margin-left: 7.986vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap :24px;
+}
+
+.chartitle{
+    font-family: 'Yeseva One', cursive;
+    font-size: 64px;
+    color: black;
+    text-align: center;
+}
+
+.rightimg p, .leftimg p{
+    display: none;
+}
+
+.chardesc{
+    width: 310px;
+    left: 217px;
+    top: 602px;
+    font-family: 'Faustina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.2em;
+    color: #000000;
+}
+
+/* MONDSTADT LOGO */
+.mondstadt{
+    width: 43.819vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* JEAN */
+.jeanimg{
+    width: 655px;
+    height: 615px;
+    cursor: pointer;
+}
+#jean{
+    background:url(../assets/Mondstadt1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* BENNET */
+.bennetimg{
+    width: 490px;
+    height: 615px;
+    cursor: pointer;
+}
+#bennet{
+    background:url(../assets/Mondstadt2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* LIYUE LOGO */
+.liyue{
+    width: 29.583vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* YELAN */
+.yelanimg{
+    width: 781px;
+    height: 615px;
+    cursor: pointer;
+}
+#yelan{
+    background:url(../assets/Liyue2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* XIAO */
+.xiaoimg{
+    width: 792px;
+    height: 615px;
+    cursor: pointer;
+}
+#xiao{
+    background:url(../assets/Liyue1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* INAZUMA LOGO */
+.inazuma{
+    width: 36.875vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* YAE MIKO */
+.yaemikoimg{
+    width: 818px;
+    height: 615px;
+    cursor: pointer;
+}
+#yaemiko{
+    background:url(../assets/Inazuma1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* RAIDEN SHOGUN */
+.raidenshogunimg{
+    width: 811px;
+    height: 615px;
+    cursor: pointer;
+}
+#raidenshogun{
+    background:url(../assets/Inazuma2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* SUMERU LOGO */
+.sumeru{
+    width: 35.278vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* FARUZAN */
+.faruzanimg{
+    width: 788px;
+    height: 615px;
+    cursor: pointer;
+}
+#faruzan{
+    background:url(../assets/Sumeru1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* DEHYA */
+.dehyaimg{
+    width: 818px;
+    height: 615px;
+    cursor: pointer;
+}
+#dehya{
+    background:url(../assets/Sumeru2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 1250px) {
+    .charactertop, .characterbottom{
+        flex-direction: column;
+        transition: all 0.5s ease;
+    }
+    
+    .leftbox, .rightbox{
+        display: none;
+        transition: all 0.5s ease;
+    }
+    
+    .leftimg, .rightimg{
+        width: 100%;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+    .xiaoimg{
+        margin-right: 120px;
+    }
+    .faruzanimg{
+        margin-left: 90px;
+    }
+    .rightimg p, .leftimg p{
+        font-family: 'Yeseva One', cursive;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        text-shadow: -1px 1px 3px #000, 1px 1px 3px #000, 1px -1px 2px #000, -1px -1px 2px #000;
+        cursor: pointer;
+        display: block;
+        transition: all 0.5s ease;
+    }
+    p:hover{
+        cursor: pointer;
+        color: #000000;
+        transition: all 0.5s ease;
+    }
+
+}
+
+@media (max-width: 858px) {
+    *{
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 675px){
+    .mondstadt{
+        width: 298.66px;
+        transition: all 0.5s ease;
+    }
+    .liyue{
+        width: 199.74px;
+        transition: all 0.5s ease;
+    }
+    .inazuma{
+        width: 248.98px;
+        transition: all 0.5s ease;
+    }
+    .sumeru{
+        width: 238.19px;
+        transition: all 0.5s ease;
+    }
+    .jeanimg{
+        width: 524px;
+        height: 492px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: all 0.5s ease;
+    }
+    .bennetimg{
+        width: 392px;
+        height: 492px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: all 0.5s ease;
+    }
+    .yelanimg{
+        width: 624px;
+        height: 492px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: all 0.5s ease;
+    }
+    .xiaoimg{
+        width: 632px;
+        height: 492px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: all 0.5s ease;
+    }
+    .yaemikoimg{
+        width: 654px;
+        height: 492px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: all 0.5s ease;
+    }
+    .raidenshogunimg{
+        width: 648px;
+        height: 492px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: all 0.5s ease;
+    }
+    .faruzanimg{
+        width: 624px;
+        height: 492px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: all 0.5s ease;
+    }
+    .dehyaimg{
+        width: 654px;
+        height: 492px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: all 0.5s ease;
+    }
+    p{
+        font-size:40px;
+        transition: all 0.5s ease;
+    }
+}

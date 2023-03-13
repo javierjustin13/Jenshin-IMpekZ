@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@500&family=Roboto:wght@500&family=Yeseva+One&display=swap');
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 633.6px;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logofooter{
+    margin-top: 22px;
+}
+
+.logofooter img{
+    width: 190px;
+    height: 130px;
+}
+
+.footermenu{
+    margin-top: 14px;
+}
+
+.footermenu ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footermenu ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #BEBEBE;
+    line-height: 1.8px;
+    margin-right: 37.4px;
+}
+
+.footermenu ul li a:hover{
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.footerteenesrb img{
+    width: 200px;
+    height: 125px;
+}
+
+.footertm{
+    margin-top: 30px;
+    width: 895px;
+}
+
+.footertm p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #BEBEBE;
+    line-height: 18px;
+    text-align: center;
+}
+
+.javerse{
+    margin-top: 19px;
+}
+
+.javerse img{
+    width: 374px;
+    height: 103px;
+}
+
+.copyright{
+    margin-top: 13px;
+}
+
+.copyright p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #BEBEBE;
+    text-align: center;
+}
+
+@media (max-width: 912px) {
+    .footertm{
+        width: 675px;
+        transition: all 0.5s ease;
+    }
+}
+
+@media (max-width: 675px){
+    .footertm{
+        display: none;
+        transition: all 0.5s ease;
+    }
+    .footermenu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+        margin-bottom: 0px;
+        
+    }
+    .footermenu ul li{
+        margin-bottom: 20px;
+        transition: all 0.5s ease;
+    }
+    .footermenu ul li a{
+        font-size: 15px;
+        line-height: 1.8px;
+        margin-right: 0px;
+        margin-top: 0px;
+        transition: all 0.5s ease;
+    }
+    .footerteenesrb{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: all 0.5s ease;
+
+    }
+    .javerse img{
+        width: 224.4px;
+        height: 61.8px;
+        transition: all 0.5s ease;
+    }
+    .footerteenesrb img{
+        width: 150px;
+        height: 93.75px;
+        transition: all 0.5s ease;
+    }
+    
+    .copyright{
+        width: 200px;
+        transition: all 0.5s ease;
+    }
+}

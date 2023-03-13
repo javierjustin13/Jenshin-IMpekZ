@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@500&family=Roboto:wght@500&family=Yeseva+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;   
+}
+
+/* TEYVAT */
+.teyvat{
+    margin-top: 112px;
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/View3.png) no-repeat center;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teyvattext{
+    width: 46.181vw;
+    height: 294px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.teyvattext p{
+    font-family: 'Faustina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: -1px 1px 3px #000, 1px 1px 3px #000, 1px -1px 2px #000, -1px -1px 2px #000;
+}
+
+.teyvattext h3{
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: -1px 1px 3px #000, 1px 1px 3px #000, 1px -1px 2px #000, -1px -1px 2px #000;
+}
+
+/* NATION */
+.nationprofile{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carousel ul li{
+    position: absolute;
+}
+
+.nationdesc{
+    width: 518px;
+}
+
+.nationpictleft{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow:hidden;
+}
+
+.nationpictright{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carousel{
+    width: 650px;
+    height: 450px;
+    position: relative;
+}
+
+.nationimg{
+    width: 650px;
+    height: 450px;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+}
+
+.nationimg[data-active]{
+    opacity: 1;
+    /* transition: opacity 1s; */
+}
+
+.btn{
+    z-index: 1;
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    outline: none;
+    text-shadow: -1px 1px 0px #000,
+				  1px 1px 0px #000,
+				  1px -1px 0px #000,
+				 -1px -1px 2px #000;
+}
+
+.btn:hover{
+    transition: all 0.3s ease-in-out;
+    text-shadow: yellow 0px 0px 10px;
+}
+
+.btn.prev{
+    left: 1rem;
+}
+
+.btn.next{
+    right: 1rem;
+}
+
+.nationimg img{
+    cursor: pointer;
+    width: 650px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nationlogo img{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+
+.nationtext h3{
+    margin-top: 33px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: -1px 1px 3px #000, 1px 1px 3px #000, 1px -1px 2px #000, -1px -1px 2px #000;
+}
+
+.nationtext p{
+    margin-top: 18px;
+    font-family: 'Faustina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: -1px 1px 3px #000, 1px 1px 3px #000, 1px -1px 2px #000, -1px -1px 2px #000;
+}
+
+/* MONDSTADT */
+.mondstadt{
+    width: 100%;
+    height: 100vh;
+    background-size: cover; 
+    background: url(../assets/BGMondstadt.jpg) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LIYUE */
+.liyue{
+    width: 100%;
+    height: 100vh;
+    background-size: cover; 
+    background: url(../assets/BGLiyue.jpg) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INAZUMA */
+.inazuma{
+    width: 100%;
+    height: 100vh;
+    background-size: cover; 
+    background: url(../assets/BGInazuma.jpg) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SUMERU */
+.sumeru{
+    width: 100%;
+    height: 100vh;
+    background-size: cover; 
+    background: url(../assets/BGSumeru.jpg) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1315px) {
+    .mondstadt, .inazuma{
+        flex-direction: column-reverse;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .liyue, .sumeru{
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationprofile{
+        width: 50%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .nationtext h3{
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 37px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationtext p{
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 30px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationlogo img{
+        width: 125px;
+        height: 125px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .carousel{
+        width: 390px;
+        height: 270px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationimg, .nationimg img{
+        width: 390px;
+        height: 270px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationpictleft, .nationpictright{
+        margin-top: 50px;
+        height: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow:hidden;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+@media (max-width: 858px) {
+    .teyvattext p{
+        font-size: 22px;
+        line-height: 30px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .teyvattext h3{
+        font-size: 46px;
+        line-height: 74px;
+        transition: all 0.5s ease-in-out; 
+    }
+}
+
+@media(max-width: 783px){
+    .nationprofile{
+        width: 100%;
+        height: 350px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .btn{
+        font-size: 2rem;
+    }
+
+    .nationdesc{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .nationtext{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationtext h3{
+        margin-top: 20px;
+        font-size: 21px;
+        line-height: 37px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationtext p{
+        margin-top: 10px;
+        font-size: 16.5px;
+        line-height: 30px;
+        transition: all 0.5s ease-in-out;
+    }
+    .carousel{
+        width: 273px;
+        height: 189px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationimg, .nationimg img{
+        width: 273px;
+        height: 189px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationpictleft, .nationpictright{
+        margin-top: 75px;
+        height: 189px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+@media (max-width: 550px) {
+    .teyvattext p{
+        font-size: 18px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .teyvattext h3{
+        font-size: 40px;
+        transition: all 0.5s ease-in-out; 
+    }
+    .nationtext{
+        width: 275px;
+        transition: all 0.5s ease-in-out;
+    }
+    .carousel{
+        width: 223.86px;
+        height: 154.98px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationimg, .nationimg img{
+        width: 223.86px;
+        height: 154.98px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationpictleft, .nationpictright{
+        margin-top: 100px;
+        height: 154.98px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+@media (max-width: 450px) {
+    .teyvattext p{
+        font-size: 16px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .teyvattext h3{
+        font-size: 36px;
+        transition: all 0.5s ease-in-out; 
+    }
+
+    .btn{
+        font-size: 1.5rem;
+    }
+
+    .nationtext{
+        width: 250px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .carousel{
+        width: 190px;
+        height: 130px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationimg, .nationimg img{
+        width: 190px;
+        height: 130px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nationpictleft, .nationpictright{
+        margin-top: 115px;
+        height: 130px;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+

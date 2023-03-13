@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenshin IMpekZ Register Page</title>
+    <link rel="stylesheet" href="registerpage.css">
+    <link rel="stylesheet" href="../navbar_footer/navbar.css">
+    <link rel="stylesheet" href="../navbar_footer/footer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script defer src="registerpage.js"></script>
+</head>
+<body>
+     <!-- NAVIGATION BAR -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <img class="logonavbar" src="../assets/JenshinIMpekZLogo.png" alt="logo">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../characterpage/characterpage.html">CHARACTERS</a></li>
+            <li><a href="../mappage/mappage.html">MAP</a></li>
+            <li><a href="../aboutpage/aboutpage.html">ABOUT</a></li>
+            <li><a href="../registerpage/registerpage.html">REGISTER</a></li>
+        </ul>
+    </nav>
+
+    <!-- REGISTER BOX -->
+    <section class="register">
+        <div class="registerimg"><img src="../assets/RegistrationImage.jpg" alt="Image"></div>
+        <form name="registerform" action="/" method="get">
+            <div class="container">
+                <div class="registertitle">Register</div>
+
+                <div class="inputtitle">Name</div>
+                <div><input class="inputbox" type="text" name="name" placeholder="Enter your full name..."></div>
+                <p class="error name-error"></p>
+
+                <div class="inputtitle">Email</div>
+                <div><input class="inputbox" type="text" name="email" placeholder="Enter your email address..."></div>
+                <p class="error email-error"></p>
+
+                <div class="inputtitle">Password</div>
+                <div><input class="inputbox" type="password" name="password" placeholder="Enter your password..."></div>
+                <p class="error password-error"></p>
+                
+                <div class="age_agree">
+                    <div class="age">
+                        <div class="inputtitle">Age</div>
+                        <div><input class="inputnum" type="number" name="age" placeholder="Enter your age..."></div>
+                    </div>
+                    
+                    <div>
+                        <div class="agree">
+                            <div><input class="inputcheck" type="checkbox" name="agree"></div>
+                            <div class="agreetext">I have read and agree to the Terms of Service & Privacy Policy</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="error age-error"></p>
+                <p class="error agree-error"></p>
+
+                
+                
+                <button class="submitbtn" type="submit">Submit</button>
+                <p class="error submit-error"></p>
+                <p class="success register-success"></p>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="logofooter">
+            <img src="../assets/JenshinIMpekZLogo.png" alt="Jenshin IMpekZ Logo">
+        </div>
+        <div class="footermenu">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footerteenesrb">
+            <img src="../assets/TeenESRB.png" alt="TEEN ESRB">
+        </div>
+        <div class="footertm">
+            <p>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+Javier, Javier Games, Javier Games Store, the Javier Games Store logo, and Javier Online Services are trademarks and/or registered trademarks of Javier Games. All other trademarks are the property of their respective owners.</p>
+        </div>
+        <div class="javerse">
+            <img src="../assets/JAVERSE.png" alt="javerse">
+        </div>
+        <div class="copyright">
+            <p>Copyright © JAVIERSPHERE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
