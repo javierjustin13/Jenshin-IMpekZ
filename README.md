@@ -22,7 +22,7 @@ https://javierjustin13.github.io/JenshinIMpekZ/
 
 # Resources
 
-Genshin Impact Official Page: 
+Genshin Impact Official Page:\
 https://genshin.hoyoverse.com/en/home
 
 Google Fonts:\
