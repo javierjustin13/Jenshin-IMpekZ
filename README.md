@@ -8,8 +8,7 @@
 
 # Preview
 
-    <img src="https://user-images.githubusercontent.com/88891911/229331102-efd523ec-f379-49f1-8446-847738607086.png" alt = "Jenshin IMpekZ Home Page"/>
-
+    ![screencapture-javierjustin13-github-io-JenshinIMpekZ-2023-04-02-11_08_39](https://user-images.githubusercontent.com/88891911/229331266-3661ab51-3c3c-441f-acfd-c67cfd12efe3.png)
 
 # Resource
 
